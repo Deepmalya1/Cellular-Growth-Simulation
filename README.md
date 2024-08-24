@@ -19,8 +19,8 @@ This project simulates the behaviour of Brain, Liver, and Body cells, focusing o
 
 - **Web Version**: JavaScript, HTML5 Canvas, CSS
 - **Python Version**: Python, Pygame (or other relevant libraries)
-- 
- ##FOR PYTHON
+  
+ ## FOR PYTHON
 - pip install pygame
 - Then Run the code 
 
