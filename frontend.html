@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="simulation-area">
+            <canvas id="simulationCanvas" width="800" height="600"></canvas>
+            <canvas id="growthGraphCanvas" width="800" height="200"></canvas>
+        </div>
+        <div class="controls">
+            <div class="slider-container">
+                <label for="diseaseSlider">Disease Strength: <span id="diseaseStrengthValue">1</span></label>
+                <input type="range" id="diseaseSlider" class="slider" min="1" max="10" value="1">
+            </div>
+            <div id="stats"></div>
+            <div id="simulatedTime"></div>
+            <div class="button-container">
+                <button id="stopButton" class="btn">Stop Simulation</button>
+                <button id="clearButton" class="btn">Clear Simulation</button>
+                
+            </div>
+            <div class="help">
+                <h2>Controls</h2>
+                <p><strong>Canvas Interaction:</strong> Click on the canvas to add cells. Click again to add cells of the selected type.</p>
+                <p><strong>Key Controls:</strong></p>
+                <ul>
+                    <li><strong>b</strong> - Set cell type to Brain</li>
+                    <li><strong>l</strong> - Set cell type to Liver</li>
+                    <li><strong>n</strong> - Set cell type to Normal</li>
+                    <li><strong>d</strong> - Set cell type to Disease</li>
+                    
+                   
+                    <li><strong>Arrow Left</strong> - Decrease Simulation Speed</li>
+                    <li><strong>Arrow Right</strong> - Increase Simulation Speed</li>
+                </ul>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="simulation.js"></script>
+</body>
+</html>
